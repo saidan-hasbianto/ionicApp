@@ -1,0 +1,21 @@
+
+ion-list{
+    background-color: transparent;
+    padding: 0;
+}
+ion-row {
+    align-items: center;
+    text-align: center;
+    }
+ion-item {
+    border-radius: 10px !important;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    border: 1px solid rgba(34, 34, 34, 0.096);
+    border-bottom: 0px !important;
+    
+    background-color: #ffffff;
+    -webkit-box-shadow: 4px 8px 6px -6px #222;
+    -moz-box-shadow: 4px 8px 6px -6px #222;
+    box-shadow: 4px 4px 6px -6px #222;
+}

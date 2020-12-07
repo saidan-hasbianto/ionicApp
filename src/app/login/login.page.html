@@ -1,0 +1,31 @@
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col><br />
+        <img  src="https://1.bp.blogspot.com/-Mi344UDQbL0/XNhdoaxMTUI/AAAAAAAALQs/wI4GXX79ZdwJ2kA4w1PXQ_J4nXi3Yp4dQCPcBGAYYCw/s320/logo%2B2.png" width="30%" /><br /><br />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <form [formGroup]="FormLogin" (ngSubmit)="login()">
+    <ion-item>
+      <div color="dark"  slot="start">
+        <ion-icon slot="icon-only" name="person" ></ion-icon>
+    </div>
+      <ion-input type="text" name="Username" placeholder="Username" formControlName="Username"></ion-input>
+    </ion-item>  
+    <!-- <ion-item>
+      <div color="dark"  slot="start">
+        <ion-icon slot="icon-only" name="lock-closed"></ion-icon>
+    </div>
+      <ion-input type="text" name="password" placeholder="Password" formControlName="Password" *ngIf="showPasswordText"></ion-input>
+      <ion-input type="password" name="password" placeholder="Password"  formControlName="Password" *ngIf="!showPasswordText"></ion-input>
+      <ion-icon color="dark" slot="icon-only" (click)="showPasswordText = !showPasswordText" *ngIf="showPasswordText" name="eye"  slot="end" class="ion-align-self-center"></ion-icon>
+      <ion-icon color="dark" slot="icon-only" (click)="showPasswordText = !showPasswordText" *ngIf="!showPasswordText" name="eye-off" slot="end" class="ion-align-self-center"></ion-icon>
+    </ion-item> 
+    <p class="ion-text-right">Forgot Password?</p>-->
+    <ion-button type="submit" expand="block" color="primary">Login</ion-button>
+  </form>
+  <p class="ion-text-center">Don't have a account?</p>
+  <ion-button expand="block" color="danger" (click)="registerModal()" >Register</ion-button>  
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "MyAppIonic4",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
